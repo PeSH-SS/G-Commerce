@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/assets/" type="image/x-icon" />		
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">    
+		<title>G-AMA Store</title>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<img class="logo" src="assets/logo.jpg" alt="logo"/>   
+			</div>
+
+			<nav>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#products">Produtos</a></li>
+				<li><a href="#contact">Contato</a></li>
+				<li>
+					<a data-target="simpleModal_7" data-toggle="modal">Cadastre-se</a>
+				</li>
+			</nav>
+		</header>
+
+		<main>
+			<section id="banner">
+				<div><img class="banner" src="assets/banner.jpg" alt="Banner"></div>
+
+				<div id="img-banner">
+					<img src="/assets/" alt="Imagem Banner" />
+				</div>
+			</section>
+
+			<section id="products">
+				<div class="product-card" value="1">
+					<img src="/assets/" alt="Imagem Desktop" />
+					<h2>Degion Desktop</h2>
+					<ul>
+						<li>Processador: Lorem ipsum</li>
+						<li>Memória: Lorem ipsum</li>
+						<li>HD: Lorem ipsum</li>
+						<li>Placa de Vídeo: Lorem ipsum</li>
+					</ul>
+					<h3>R$ 2000,00</h3>
+					<button id="btn-desktop">Comprar</button>
+				</div>
+
+				<div class="product-card" value="2">
+					<img src="/assets/" alt="Imagem All In One" />
+					<h2>Degion All In One</h2>
+					<ul>
+						<li>Processador: Lorem ipsum</li>
+						<li>Memória: Lorem ipsum</li>
+						<li>HD: Lorem ipsum</li>
+						<li>Placa de Vídeo: Lorem ipsum</li>
+					</ul>
+					<h3>R$ 2500,00</h3>
+					<button id="btn-allinone">Comprar</button>
+				</div>
+
+				<div class="product-card" value="3">
+					<img src="/assets/notebook.svg" alt="Imagem Notebook" />
+					<h2>Degion Notebook</h2>
+					<ul>
+						<li>Processador: Lorem ipsum</li>
+						<li>Memória: Lorem ipsum</li>
+						<li>HD: Lorem ipsum</li>
+						<li>Placa de Vídeo: Lorem ipsum</li>
+					</ul>
+					<h3>R$ 3000,00</h3>
+					<button id="btn-notebook">Comprar</button>
+				</div>
+				
+			</section>
+
+			<footer id="contact">
+				<div id="newsletter">
+					<h1>Assine nossa newsletter e fique sabendo das nossas promoções</h1>
+					<input type="email" id="email" placeholder="Insira seu e-mail" />
+					<button id="btn">Enviar</button>
+				</div>
+
+			</footer>
+		</main>
+
+		<section id="simpleModal_7" class="modal">
+			<div class="modal-window">
+				<h3>Preencha os dados e crie sua conta</h3>
+				<form>
+					<label for="name">Nome Completo</label>
+					<input
+						type="text"
+						name="name"
+						id="name-input"
+						placeholder="Digite seu nome completo"
+						required
+					/>
+
+					<label for="cpf">CPF</label>
+					<input
+						type="text"
+						name="cpf"
+						id="cpf-input"
+						pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+						\
+						title="Digite um CPF no formato: xxx.xxx.xxx-xx"
+						placeholder="Digite seu CPF no formato: xxx.xxx.xxx-xx"
+						required
+					/>
+
+					<label for="date-birth">Data de nascimento</label>
+					<input type="date" name="date-birth" id="datebirth-input" required />
+
+					<label for="email">E-mail</label>
+					<input
+						type="email"
+						name="email"
+						id="email-input"
+						placeholder="Digite seu e-mail"
+						required
+					/>
+
+					<label for="cep">CEP</label>
+					<input
+						type="text"
+						name="cep"
+						id="cep-input"
+						pattern="\d{5}\-\d{3}"
+						\
+						title="Digite um CEP no formato: xxxxx-xxx"
+						placeholder="Digite seu CEP no formato: xxxxx-xxx"
+						required
+					/>
+
+					<label for="address">Endereço Completo</label>
+					<input
+						type="text"
+						name="address"
+						id="adrress-input"
+						placeholder="Insira seu endereço completo, incluindo complementos"
+						title="Insira seu endereço completo, incluindo complementos"
+						required
+					/>
+
+					<label for="password">Insira uma senha</label>
+					<input
+						type="password"
+						name="password"
+						id="password-input"
+						placeholder="Digite uma senha"
+						required
+					/>
+				</form>
+
+				<div id="buttons-modal">
+					<button class="btn-modal" id="btn-submit">Cadastrar</button>
+					<button class="btn-modal" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</section>
+
+		<script src="/js/storeEmail.js"></script>
+		<script src="/js/addProduct.js"></script>
+		<script src="/js/modal.js"></script>
+		<script src="/js/form.js"></script>
+	</body>
+</html>
