@@ -157,79 +157,9 @@ nav li:last-child {
 	color: var(--font-color);
 }
 
-/* ---------------------- FOOTER ---------------------- */
 
-footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 4rem;
-}
 
-footer #newsletter {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 
-footer #newsletter h1 {
-	text-align: center;
-}
-
-footer #newsletter input {
-	width: 75%;
-	height: 2.5rem;
-	margin-top: 0.5rem;
-	outline: none;
-	background-color: var(--font-color);
-	font-size: 0.8rem;
-	padding: 0.1rem;
-	border-radius: 0.4rem;
-}
-
-input::placeholder {
-	color: var(--bg-card-color);
-	padding-left: 1rem;
-}
-
-footer #newsletter button {
-	width: 65%;
-	height: 2.5rem;
-	margin-top: 1rem;
-	border-radius: 0.4rem;
-	background-color: var(--font-color);
-	transition: 0.4s;
-	font-size: 1rem;
-	font-weight: 600;
-	color: var(--bg-card-color);
-	cursor: pointer;
-}
-
-footer #newsletter button:hover {
-	background-color: var(--hover-color);
-	color: var(--font-color);
-}
-
-footer #author {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-}
-
-footer #author h2 {
-	text-align: center;
-}
-
-footer #author #social-media {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 /* ---------------------- MODAL ---------------------- */
 .modal {
