@@ -1,27 +1,23 @@
 /* ---------- DATABASE ---------- */
-const degionDesktop = {
+const Brawlhalla = {
 	id: 1,
-	name: "Degion Desktop",
-	price: 2000,
+	name: "Brawlhalla",
+	price: 150,
 };
 
-const degionAllInOne = {
+const GrandChase = {
 	id: 2,
-	name: "Degion All In One",
-	price: 2500,
+	name: "Grand Chase",
+	price: 200,
 };
 
-const degionNotebook = {
+const GuardianTales = {
 	id: 3,
-	name: "Degion Notebook",
-	price: 3000,
+	name: "Guardian Tales",
+	price: 100,
 };
 
-const degionGamer = {
-	id: 4,
-	name: "Degion Gamer",
-	price: 3500,
-};
+
 
 // Cria um array para armazenamento dos produtos
 const items = (() => {
@@ -31,34 +27,28 @@ const items = (() => {
 
 /* ---------- FUNCIONALIDADES ---------- */
 
-// Armazena o produto Degion Desktop no array
-const btnDesktop = document.getElementById("btn-desktop");
-btnDesktop.addEventListener("click", () => {
-	items.push(degionDesktop);
+// Armazena Brawlhalla no array
+const Brawl = document.getElementById("Braw");
+Brawl.addEventListener("click", () => {
+	items.push(Brawlhalla);
 	localStorage.setItem("cart", JSON.stringify(items));
-	alert("Degion Desktop adicionado ao carrinho!");
+	alert("Brawlhalla adicionado ao carrinho!");
 });
 
-// Armazena o produto Degion All In One no array
-const btnAllInOne = document.getElementById("btn-allinone");
-btnAllInOne.addEventListener("click", () => {
-	items.push(degionAllInOne);
+// Armazena Grand Chase no array
+const GrandC = document.getElementById("Grand-Chase");
+GrandC.addEventListener("click", () => {
+	items.push(GrandChase);
 	localStorage.setItem("cart", JSON.stringify(items));
-	alert("Degion All In One adicionado ao carrinho!");
+	alert("Grand Chase adicionado ao carrinho!");
 });
 
-// Armazena o produto Degion Notebook no array
-const btnNotebook = document.getElementById("btn-notebook");
-btnNotebook.addEventListener("click", () => {
-	items.push(degionNotebook);
+// Armazena Guardian Tales no array
+const GuardianT = document.getElementById("Guardian-Tales");
+GuardianT.addEventListener("click", () => {
+	items.push(GuardianTales);
 	localStorage.setItem("cart", JSON.stringify(items));
-	alert("Degion Notebook adicionado ao carrinho!");
+	alert("Guardian Tales adicionado ao carrinho!");
 });
 
-// Armazena o produto Degion Gamer no array
-const btnGamer = document.getElementById("btn-gamer");
-btnGamer.addEventListener("click", () => {
-	items.push(degionGamer);
-	localStorage.setItem("cart", JSON.stringify(items));
-	alert("Degion Gamer adicionado ao carrinho!");
-});
+
